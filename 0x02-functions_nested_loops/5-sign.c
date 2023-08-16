@@ -3,6 +3,8 @@
 /**
  *print_sign -  prints the of a numbers
  *
+ *@n: number to be checked
+ *
  *Return: 0 or 1 or -1
 */
 int print_sign(int n)
