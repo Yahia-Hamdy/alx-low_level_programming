@@ -3,7 +3,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- *_isalphar - checks if a letter  or not
+ *_isalpha - checks if a letter  or not
  *@c: check input of the function
  *Return: 0 or 1
 */
