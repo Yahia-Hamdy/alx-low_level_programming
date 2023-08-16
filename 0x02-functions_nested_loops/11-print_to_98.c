@@ -1,53 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
+#include <ctype.h>
 /**
- * print_to_98 - prints all natural numbers from n to 98,
- *               followed by a new line.
- * @n: starting number
- */
+ *print_to_98 - prints till 98
+ *
+ *@n: check input of the function
+ *
+ *Return: 0 (success)
+*/
 void print_to_98(int n)
+
+if (n < 98)
 {
-	if (n >= 98)
-	{
-		while (n > 98)
-		{
-			printf("%d, ", n);
-			n--;
-		}
-		printf("%d\n", n);
-	}
-	else
-	{
-		while (n < 98)
-		{
-			printf("%d, ", n);
-			n++;
-		}
-		printf("%d\n", n);
-	}
-}#include "main.h"
-/**
- * print_to_98 - prints all natural numbers from n to 98,
- *               followed by a new line.
- * @n: starting number
- */
-void print_to_98(int n)
+while (n < 98)
 {
-	if (n >= 98)
-	{
-		while (n > 98)
-		{
-			printf("%d, ", n);
-			n--;
-		}
-		printf("%d\n", n);
-	}
-	else
-	{
-		while (n < 98)
-		{
-			printf("%d, ", n);
-			n++;
-		}
-		printf("%d\n", n);
-	}
+printf("%d, ", n);
+n = n + 1;
+}
+}
+
+else
+{
+while (n > 98)
+{
+printf("%d, ", n);
+n = n - 1;
+}
+}
+printf("98\n");
+return (0);
 }
