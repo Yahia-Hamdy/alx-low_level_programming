@@ -1,16 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-/*
- * main - Entry point
+#include "main.h"
+/**
+ * main - Prints "_putchar" followed by a new line.
  *
- * Description: prints _putchar
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
+
 int main(void)
 {
-puts("_putchar");
-return (0);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return (0);
 }
