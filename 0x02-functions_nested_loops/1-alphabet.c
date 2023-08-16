@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-*main - Entry Point
-*
-*Description: prints letters for ffsy
-*
-*Return: Always 0 (Success)
+ *print_alphabet - Entry Point
+ *
+ *p*rint_alphabet - prints the alphabet ffs
+ *
+ *Return: void
 */
 void print_alphabet(void)
 {
