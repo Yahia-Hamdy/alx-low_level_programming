@@ -3,14 +3,12 @@
 #include "main.h"
 #include <ctype.h>
 /**
- *_isalpha - checks if a letter  or not
+ *_abs - computes abs valuet
  *@c: check input of the function
- *Return: 0 or 1
+ *Return: 0 
 */
-int _isalpha(int c)
+int _abs(int c)
 {
-	if (isalpha(c))
-	return (1);
-	else
+	_abs(c);
 	return (0);
 }
