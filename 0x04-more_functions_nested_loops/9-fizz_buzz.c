@@ -1,36 +1,39 @@
 #include "main.h"
-#include <stdio.h>
 /**
- *maion - prints number form 1 to 100e xcept for some exceptions.
- *@i: is the number of times the character _ should be printed
- *Return: 0 Always  Success
+ * main - program that prints the numbers from 1 to 100,
+ *        followed by a new line. But for multiples of three
+ *        print Fizz instead of the number
+ *        and for the multiples of five print Buzz.
+ *        For numbers which are multiples of both three
+ *        and five print FizzBuzz.
+ * Return: 0 Always.
  */
-int main(int)
+int main(void)
 {
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			{
-			printf("FizzBuzz ");
-			continue;
-			}
+		if ((i % 3 == 0) && (i % 5 == 0))
+		{
+			printf("FizzBuzz");
+		}
 		else if (i % 3 == 0)
-			{
-			printf("Fizz ");
-			continue;
-			}
+		{
+			printf("Fizz");
+		}
 		else if (i % 5 == 0)
-			{
-			printf("Buzz ");
-			continue;
-			}
-		else 
-			printf("%d ", i);
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", i);
+		}
 		if (i != 100)
 			printf(" ");
 	}
 	printf("\n");
+
 	return (0);
 }
