@@ -1,27 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include "main.h"
 /**
- * main - Entry point
+ * positive_or_negative - Prints if number is
+ * positive or negative or equals to zero.
+ * @i: the number to be compared
  *
- * Description: Prints if number is positive or negative or equals to zero
- *
- * Return: Always 1 (Success)
  */
-int main(void)
+void positive_or_negative(int i)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%i is positive\n", n);
-	else if (n == 0)
-		printf("%i is zero\n", n);
+	if (i > 0)
+		printf("%i is positive\n", i);
+	else if (i == 0)
+		printf("%i is zero\n", i);
 	else
-		printf("%i is negative\n", n);
-	return (0);
+		printf("%i is negative\n", i);
 }
