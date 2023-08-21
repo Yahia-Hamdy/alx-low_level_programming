@@ -4,12 +4,12 @@
 /**
  *reset_to_98 - set value to 98.
  *
- **n: ptr for an value
+ *@*n : ptr for an value
  *
- *Retur: void.
+ *Return : void.
  */
 
 void void reset_to_98(int *n)
 {
-*n = 98
+*n = 98;
 }
