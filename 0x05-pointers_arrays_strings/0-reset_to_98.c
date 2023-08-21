@@ -4,7 +4,7 @@
 /**
  *reset_to_98 - set value to 98.
  *
- *@*n : ptr for an value
+ *@n : ptr for an value.
  *
  *Return : void.
  */
